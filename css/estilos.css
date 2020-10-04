@@ -12,6 +12,10 @@
   font-family: Sen-Xbold;
   src: url("../fonts/sen-extrabold.otf");
 }
+@font-face {
+  font-family: Roboto-Thin;
+  src: url("../fonts/Roboto-Thin.ttf");
+}
 
 body {
   background-color: var(--background-color);
@@ -102,10 +106,20 @@ a {
 /* ESTILO DE FOOTER */
 footer {
   height: auto;
-  background-color: #a8a8a8;
-  color: white;
+  background-color: var(--background-color);
+  color: #9c9977;
   margin: 0;
-  padding: 8px;
+  padding: 8px 0;
+  font-family: "Roboto-Thin", Helvetica, Arial, sans-serif;
+}
+footer div {
+  margin: 0 32px;
+}
+footer-line {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid red;
 }
 header {
   margin: 0;
