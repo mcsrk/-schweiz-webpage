@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta lang="es" />
+    <title>Nombre de la pestaña</title>
+    <!-- nombre de la pestaña en el navegador-->
+    <link rel="stylesheet" href="./css/estilos.css">
+  </head>
+
+  <body>
+    <header class="header sticky">
+        <!-- el elemento header incluye el menu desplegable y el ícono que lo despliega -->
+        <input
+            type="checkbox"
+            id="btn-menu"
+        /><!-- checkbox permite la opción boleana -->
+
+        <label for="btn-menu">
+            <img src="images/menu.png" width="30px"/>
+        </label>
+        <!-- la imagen del ícono se muestra como label del checkbox pero se oculta cuando no se necesita -->
+        <nav class="menu">
+            <ul>
+                <li><a href="./pages/index.html" class="active">Inicio</a></li>
+                <li><a href="./pages/page1.html" >Ubicación</a></li>
+                <li><a href="./pages/page2.html" >Personajes</a></li>
+                <li><a href="./pages/page3.html" >Actividades</a></li>
+                <li><a href="./pages/page4.html" >Créditos</a></li>
+            </ul>
+        </nav>
+    </header>
+      
+    <div><h1>Suiza</h1></div>
+    <!-- titular mas grande -->
+    <!-- <img
+      src="./images/mountains.jpg"
+      alt="fachada de la iglesia de Santa Barbara en Mompox"
+    /> -->
+    <p>
+      <!-- párrafo -->Texto, texto y mas texto. Texto, texto y mas texto. Texto,
+      texto, texto, texto y mucho mas texto. Texto, texto y mucho mas texto.
+      Texto, texto y texto, texto, texto, texto y mucho mas texto. Texto, texto
+      y mas texto. Texto, texto y mas texto. Texto, texto y mas texto.
+      <br /><!-- etiqueta para pasar al siguiente renglón -->Texto, texto y mas
+      texto. Texto, texto y mucho mas texto. Texto, texto y mas texto. Texto,
+      texto y mas texto. Texto, texto y mucho mas texto. Texto, texto y mas
+      texto. Texto, texto y mas texto. Texto, texto y mas texto. Texto, texto y
+      mas texto. Texto, texto y mas texto.
+    </p>
+    <div class="card">
+        <a href="https://facebook.design/videos/designing-at-facebook"> 
+          <img  class="card-image" src="./images/mountains.jpg"
+          alt="montanas de austria"
+          
+        />
+          <div class="card-block">
+            <h2 class="card-title">Camión de Mudanza</h2> 
+            <ul class="card-description">
+              <li>Zona: Kennedy</li>
+              <li>Capacidad: 20 m^3</li>
+              <li>Condutor: Bruce "duro de matar" Willis</li>
+            </ul>
+            <hr class="card-divisor"></hr>
+            <h6 class="card-type"></h6>
+            <h6 class="card-tag">Ver más</h6>
+          </div>  
+    
+        </a>
+      </div>
+      <footer>
+        <div class="myFooter">
+            <h5>
+                Desarrollo de Jhon Acosta
+            </h5>            
+        </div>
+    </footer>
+  </body>
+</html>
