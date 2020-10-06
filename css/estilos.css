@@ -46,7 +46,7 @@ body {
 	display: none; /* oculta el checkbox cuando no es necesario*/
 }
 .card {
-	margin: 36px 4px;
+	margin: 36px 12px;
 	max-width: 300px;
 	/* box-shadow: 0 20px 20px rgba(0, 0, 0, 0.16); */
 
@@ -108,6 +108,11 @@ a {
 	border: 0;
 	border-top: 1px solid #e6e1b2;
 }
+.footer-divisor {
+	margin: 0 0 16px 0;
+	border: 0;
+	border-top: 1px solid #e6e1b2;
+}
 .card-type,
 .card-tag {
 	margin: 16px 0 0 0;
@@ -122,19 +127,11 @@ a {
 footer {
 	height: auto;
 	background-color: var(--background-color);
-	color: #9c9977;
-	margin: 0;
-	padding: 8px 0;
-	font-family: "Roboto-Thin", Helvetica, Arial, sans-serif;
-}
-footer div {
-	margin: 0 32px;
-}
-footer-line {
-	width: 100%;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid red;
+	padding: 16px;
+	width: 90%;
+	margin: 16px auto;
+	box-shadow: inset 3px 3px 6px #d8d5a5, inset -3px -3px 6px #ffffdf;
+	border-radius: 20px;
 }
 
 header {
@@ -230,6 +227,7 @@ header label:hover {
 	border: var(--border);
 	border-radius: 16px;
 	margin: 1rem auto;
+	padding: 1rem;
 	/*max-width: 960px;
 	padding: 0 20px 20px;
 	
@@ -239,7 +237,7 @@ header label:hover {
 	-webkit-column-gap: 20px;
 	column-gap: 20px; */
 }
-.container-text {
+.container-text1 {
 	/* seccion principal de la pantalla index*/
 	display: flex;
 	flex-direction: row;
@@ -248,7 +246,7 @@ header label:hover {
 	width: 80%;
 	box-sizing: border-box;
 	border-radius: 16px;
-	margin: 2rem auto 3rem auto;
+	margin: 4rem auto 4rem auto;
 	max-width: 800px;
 	box-shadow: 12px 12px 32px #dad7a7, -12px -12px 32px #ffffdd;
 	/*max-width: 960px;
@@ -262,7 +260,7 @@ header label:hover {
 }
 .text1 {
 	font-family: Roboto-Light;
-	margin: 36px 50px;
+	margin: 12px 50px 36px 50px;
 	color: #555555;
 }
 .image-bg {
@@ -299,6 +297,40 @@ h1 {
 	position: relative;
 	margin: 8px;
 	text-align: center;
+
+	/*-webkit-column-span: all;font-size: 70px;
+	-moz-column-span: all;
+	column-span: all;	
+	max-width: 640px; 
+	 */
+}
+h2 {
+	/* caracteriza a los titulos */
+	color: #4e4e4e;
+
+	font-size: 2.5rem;
+	font-family: "Sen-Regular", Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+	position: relative;
+	margin: 24px;
+	margin-bottom: 12px;
+	text-align: center;
+
+	/*-webkit-column-span: all;font-size: 70px;
+	-moz-column-span: all;
+	column-span: all;	
+	max-width: 640px; 
+	 */
+}
+h5 {
+	/* caracteriza a los titulos */
+	color: #4e4e4e;
+
+	font-size: 0.75rem;
+	margin: 4px 12px;
+	text-align: left;
+	color: #9c9977;
+	font-family: "Roboto-Thin", Helvetica, Arial, sans-serif;
 
 	/*-webkit-column-span: all;font-size: 70px;
 	-moz-column-span: all;
