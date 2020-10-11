@@ -35,6 +35,7 @@ body {
 	--border-radius-card: 24px;
 	--header-color: #fe6960;
 	--background-color: #fefac2;
+	--link-color: #74c0c4;
 	--border: 1px solid #e6e1b2;
 	/* --background-color: #fafafa;
 	--border: 1px solid #dfdfdf; */
@@ -64,7 +65,7 @@ body {
 }
 a {
 	text-decoration: none;
-	color: #1d2129;
+	color: var(--link-color);
 }
 .card-image {
 	width: 100%;
@@ -239,7 +240,9 @@ header label:hover {
 	max-width: 800px;
 	box-shadow: 12px 12px 32px #dad7a7, -12px -12px 32px #ffffdd;
 }
-
+.container-horizontal {
+	margin: 0 4rem;
+}
 /* ESTILO CARDS HORIZONTALES IZQ. Y DER. */
 .card-horizontal {
 	/* seccion principal de la pantalla index*/
@@ -249,16 +252,18 @@ header label:hover {
 	width: 100%;
 	box-sizing: border-box;
 	border-radius: var(--border-radius-card);
-	margin: 4rem auto 4rem auto;
-	max-width: 800px;
+	margin: 2rem 0;
+	max-width: 1000px;
 	box-shadow: 12px 12px 32px #dad7a7, -12px -12px 32px #ffffdd;
 }
 .left {
-	margin: 4rem auto 4rem 5rem;
+	margin-right: auto;
+	margin-left: 0;
 	flex-direction: row;
 }
 .right {
-	margin: 4rem 5rem 4rem auto;
+	margin-right: 0;
+	margin-left: auto;
 	flex-direction: row-reverse;
 }
 .right .image {
@@ -344,6 +349,49 @@ h5 {
 	color: #9c9977;
 	font-family: "Roboto-Thin", Helvetica, Arial, sans-serif;
 }
+/* cuando la ventana mida menos de 1050px */
+@media only screen and (max-width: 1050px) {
+	h1 {
+		font-size: 5.5rem;
+	}
+	.card-horizontal {
+		justify-content: space-evenly;
+		box-sizing: border-box;
+		border-radius: var(--border-radius-card);
+		box-shadow: 12px 12px 32px #dad7a7, -12px -12px 32px #ffffdd;
+	}
+	.text1 {
+		font-size: 14px;
+	}
+}
+/* cuando la ventana mida menos de 860px */
+@media only screen and (max-width: 860px) {
+	.container-list {
+		max-width: 800px;
+	}
+	.container-horizontal {
+		margin: 4rem 4rem 4rem 4rem;
+		padding: 0 20px;
+	}
+	.card-horizontal {
+		flex-direction: column;
+		justify-content: space-evenly;
+		width: 100%;
+		box-sizing: border-box;
+		margin: 0;
+		border-radius: var(--border-radius-card);
+		max-width: 1000px;
+		box-shadow: 12px 12px 32px #dad7a7, -12px -12px 32px #ffffdd;
+	}
+	.card-horizontal h2 {
+		text-align: center;
+	}
+	.card-horizontal .image {
+		border-radius: var(--border-radius-card);
+		margin: auto;
+		width: 100%;
+	}
+}
 /* cuando la ventana mida menos de 640px */
 @media only screen and (max-width: 640px) {
 	header label {
@@ -352,9 +400,7 @@ h5 {
 	}
 	.menu {
 		position: fixed; /* sostiene la posición aunque se haga scroll en el contenido */
-		background-color: var(
-			--header-color
-		); /* rojo, verde, azul, alpha (transparencia) */
+		background-color: var(--header-color);
 		z-index: 30; /* para asegurar que el menu esta por encima de todo lo demás*/
 		width: 130px; /* se refiere al ancho del fondo del menu y no a los botones */
 		margin-left: -60%; /* se oculta porque se coloca por fuera de la ventana*/
@@ -373,5 +419,9 @@ h5 {
 	#btn-menu:checked ~ .menu {
 		/* el checkbox controla las dos posiciones del menu */
 		margin: 1px;
+	}
+	.container-horizontal {
+		margin: 4rem 4rem 4rem 4rem;
+		padding: 0;
 	}
 }
