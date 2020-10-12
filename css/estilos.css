@@ -123,6 +123,8 @@ a {
 }
 /* ESTILO DE FOOTER */
 footer {
+	display: flex;
+	flex-direction: row;
 	height: auto;
 	background-color: var(--background-color);
 	padding: 16px;
@@ -130,6 +132,32 @@ footer {
 	margin: 16px auto;
 	box-shadow: inset 3px 3px 6px #d8d5a5, inset -3px -3px 6px #ffffdf;
 	border-radius: 20px;
+}
+.footer-text {
+	margin-right: auto;
+}
+.footer-button {
+	background: linear-gradient(145deg, #ff7067, #e55f56);
+	box-shadow: 9px 9px 18px #d8d5a5, -9px -9px 18px #ffffdf;
+	border-radius: var(--border-radius-button);
+	margin: 2px;
+}
+.footer-button:hover {
+	background: var(--header-color);
+	border-radius: var(--border-radius-button-active);
+	cursor: pointer;
+}
+h4 {
+	font-size: 0.85rem;
+	margin: 4px 12px;
+	text-align: center;
+	color: white;
+	font-family: "Roboto-Light", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin: 10px;
+}
+.footer-button:hover h4 {
+	color: white;
 }
 
 /* ESTILO DEL HEADER Y SUS ELEMENTOS */
@@ -353,9 +381,6 @@ h2 {
 }
 /* Contenido de cards */
 h5 {
-	/* caracteriza a los titulos */
-	color: #4e4e4e;
-
 	font-size: 0.75rem;
 	margin: 4px 12px;
 	text-align: left;
