@@ -37,6 +37,7 @@ body {
 	--background-color: #fefac2;
 	--link-color: #74c0c4;
 	--border: 1px solid #e6e1b2;
+	--card-color: #f7f3c5;
 	/* --background-color: #fafafa;
 	--border: 1px solid #dfdfdf; */
 
@@ -80,7 +81,8 @@ a {
 }
 .card-block {
 	padding: 24px;
-	background-color: var(--background-color);
+
+	background: var(--card-color);
 	border-bottom-left-radius: 2px;
 	border-bottom-right-radius: var(--border-radius-card);
 	border-bottom-left-radius: var(--border-radius-card);
@@ -94,7 +96,7 @@ a {
 }
 .card-description {
 	display: -webkit-box;
-	-webkit-line-clamp: 3;
+	-webkit-line-clamp: 6;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -262,6 +264,7 @@ header label:hover {
 	width: 100%;
 	box-sizing: border-box;
 	border-radius: var(--border-radius-card);
+	background: var(--card-color);
 	margin: 2rem 0;
 	max-width: 1000px;
 	box-shadow: 12px 12px 32px #dad7a7, -12px -12px 32px #ffffdd;
