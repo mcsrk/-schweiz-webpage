@@ -308,10 +308,14 @@ header label:hover {
 .right .image {
 	border-top-right-radius: var(--border-radius-card);
 	border-bottom-right-radius: var(--border-radius-card);
+	max-height: 100%;
+	width: 30%;
 }
 .left .image {
 	border-top-left-radius: var(--border-radius-card);
 	border-bottom-left-radius: var(--border-radius-card);
+	max-height: 100%;
+	width: 30%;
 }
 .right h2 {
 	text-align: right;
@@ -434,7 +438,7 @@ h5 {
 	.card-horizontal .image {
 		border-radius: var(--border-radius-card);
 		margin: auto;
-		width: 100%;
+		width: 300px;
 	}
 }
 /* cuando la ventana mida menos de 640px */
