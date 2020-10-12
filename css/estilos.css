@@ -240,6 +240,16 @@ header label:hover {
 	max-width: 800px;
 	box-shadow: 12px 12px 32px #dad7a7, -12px -12px 32px #ffffdd;
 }
+.container-mapa {
+	box-shadow: 12px 12px 32px #dad7a7, -12px -12px 32px #ffffdd;
+	margin: 4rem auto 4rem auto;
+	width: fit-content;
+	border-radius: var(--border-radius-card);
+}
+.mapa {
+	border-radius: var(--border-radius-card);
+	max-width: 600px;
+}
 .container-horizontal {
 	margin: 0 4rem;
 }
@@ -415,6 +425,10 @@ h5 {
 	}
 	.menu a {
 		padding: 14px 12px;
+	}
+	.mapa {
+		border-radius: var(--border-radius-card);
+		max-width: 400px;
 	}
 	#btn-menu:checked ~ .menu {
 		/* el checkbox controla las dos posiciones del menu */

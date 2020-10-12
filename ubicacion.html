@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta lang="es" />
+    <title>Suiza - Ubicacion</title>
+    <!-- nombre de la pestaña en el navegador-->
+    <link rel="stylesheet" href="./css/estilos.css">
+  </head>
+
+  <body>
+    <header class="header sticky">
+        <!-- el elemento header incluye el menu desplegable y el ícono que lo despliega -->
+        <input
+            type="checkbox"
+            id="btn-menu"
+        /><!-- checkbox permite la opción boleana -->
+
+        <label for="btn-menu">
+            <img src="images/menu.png" width="30px"/>
+        </label>
+        <!-- la imagen del ícono se muestra como label del checkbox pero se oculta cuando no se necesita -->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" >Inicio</a></li>
+                <li><a href="./ubicacion.html" class="active">Ubicación</a></li>
+                <li><a href="./personajes.html" >Personajes</a></li>
+                <li><a href="./actividades.html" >Actividades</a></li>
+                <li><a href="./creditos.html" >Créditos</a></li>
+            </ul>
+        </nav>
+    </header>
+      
+    <div class="image-bg">
+      <div class ="filter-bg">
+        <div class = "h1-deco">
+          <h1>Ubicación</h1>
+        </div>
+        
+      </div>
+    </div>
+    <div class="container-mapa">
+        <iframe 
+        class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1398134.5307392105!2d7.103117466871892!3d46.80959457972885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64ef6f596d61%3A0x5c56b5110fcb7b15!2sSuiza!5e0!3m2!1ses-419!2sco!4v1602459550975!5m2!1ses-419!2sco" 
+            width="600" 
+            height="450" 
+            frameborder="0" 
+            style="border:0;" 
+            allowfullscreen="" 
+            aria-hidden="false" 
+            tabindex="0">
+        </iframe>
+    </div>
+    <div class="container-text1">
+      <h2>Suiza</h2>
+      <p class="text1">
+        Suiza se encuentra en Europa Central con Francia en el lado 
+        del este y en Italia en el lado norte.Suiza se extiende sobre una 
+        superficie total de 41.290 km².
+        <br>
+        <br>
+         El país es multiétnico y multireligioso 
+        cuenta con una población de 7.554.661. El francés, alemán, Italiano y 
+        romanche son los idiomas oficialmente reconocidos de Suiza. La capital 
+        de Suiza es Berna. 
+        <br>
+        <br>
+        Las vacaciones en Suiza brinda al turista con una 
+        maravillosa oportunidad para disfrutar el esplendor natural del lugar.
+
+      </p></div>
+
+  <h2>Las 3 Suizas</h2>
+
+  <div class="container-horizontal">
+    <div class="card-horizontal left">
+      <img 
+          class="image" 
+          src="./images/suiza1.jpg"
+          alt="Suiza francesa"
+        />
+      <div>
+        <h2>Suiza Francesa</h2>
+        <p class="text1">
+        Suiza francesa es la parte francófona de Suiza. 
+        Comprende los cantones de Ginebra, Vaud, Neuchâtel y Jura, 
+        así como las zonas francófonas de los cantones de Berna, Valais (74 %) y Friburgo. 
+        Alrededor de 1,95 millones de personas (el 24,5 % de la población suiza) vive en Romandía.
+          <br />
+          <br />
+          El francés suizo y el francés de Francia son la misma lengua con algunas diferencias. 
+          Por ejemplo, como en otras regiones de habla francesa (Bélgica, Valle de Aosta), 
+          los francófonos suizos usan septante (setenta) en lugar de soixante-dix 
+          (literalmente, "sesenta-diez") y nonante (noventa) en lugar de quatre-vingt-dix 
+          ("cuatro-veinte-diez")</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-horizontal">
+    <div class="card-horizontal right">
+      <img 
+        class="image" 
+        src="./images/suiza2.jpg"
+        alt="Suiza Alemana"
+      />
+      <div>
+        <h2>Suiza Alemana</h2>
+        <p class="text1">
+            Con el término Suiza alemana (en alemán, Deutschschweiz) se denomina a las 
+            zonas de Suiza con una población predominantemente germanófona. Cubre un 65 
+            por ciento del territorio suizo.
+          <br/>
+          <br/>
+          El alemán es la lengua oficial en 17 de los <b>26 cantones suizos</b>: 
+          Uri, Schwyz, Obwalden, Nidwalden, Lucerna, Zúrich, Glaris, Zug, Soleura, Basilea-Ciudad, 
+          Basilea-Campiña, Schaffhausen, Appenzell Rodas Exteriores, Appenzell Rodas Interiores, 
+          Sankt Gallen, Argovia y Turgovia.
+          <br/>
+          <br/>
+          Otros tres cantones son bilingües alemán-francés: Berna (84%), Friburgo y el Valais (30%)</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-horizontal">
+    <div class="card-horizontal left">
+      <img 
+          class="image" 
+          src="./images/suiza3.jpg"
+          alt="Suiza italiana"
+        />
+      <div>
+        <h2>Suiza Italiana</h2>
+        <p class="text1">
+            La Suiza italiana consta de los cantones: Tesino, Grisones y Bivio.
+            <br/>
+            <br/>
+          La extensión de la Suiza Italiana es de aprox. 3976,78 km², 
+          con una población cercana a los 366.481 habitantes de los
+           cuales 80.000 eran extranjeros(2016).
+          <br/>
+          <br/>
+          El término "Suiza italiana" no tiene ningún reconocimiento oficial, 
+          ya que la Confederación Suiza reconoce como entes constitutivos de la
+           misma a los cantones, cuyas fronteras políticas no coinciden con las fronteras 
+           lingüísticas.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <h5>
+      Desarrollo de Jhon Acosta
+    </h5>   
+    <h5>
+      Gráfica Interactiva 2020-II
+    </h5> 
+  </footer>
+  
+</body>
+</html>
