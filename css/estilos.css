@@ -1,3 +1,7 @@
+/* LOS ESTILOS NO ESTÁN ORGANIZADOS ALFABEITCAMENTE YA QUE PARA 
+MI FLUJO DE DESARROLLO ME ES MÁS FÁCIL SU LECTURA AL TENERLOS AGRUPADOS POR ELEMENTO
+AL QUE EL ESTILO CORRESPONDE , DENTRO DEL MISMO ELEMENTO ESTÁN 
+ORGANIZADOS POR JERARQUÍA DE QUIÉN CONTIENE A QUIÉN */
 @charset "UTF-8";
 
 /* FUENTES */
@@ -38,8 +42,6 @@ body {
 	--link-color: #74c0c4;
 	--border: 1px solid #e6e1b2;
 	--card-color: #f7f3c5;
-	/* --background-color: #fafafa;
-	--border: 1px solid #dfdfdf; */
 
 	--box-shadow-pressed: inset 2px 2px 8px #d85952, inset -2px -2px 32px #ff796e;
 	--transition-time: 0.5s ease;
@@ -147,15 +149,6 @@ footer {
 	border-radius: var(--border-radius-button-active);
 	cursor: pointer;
 }
-h4 {
-	font-size: 0.85rem;
-	margin: 4px 12px;
-	text-align: center;
-	color: white;
-	font-family: "Roboto-Light", Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	margin: 10px;
-}
 .footer-button:hover h4 {
 	color: white;
 }
@@ -258,8 +251,8 @@ header label:hover {
 	margin: 1rem auto;
 	padding: 1rem;
 }
+/*Contenedor de texto principal*/
 .container-text1 {
-	/* seccion principal de la pantalla index*/
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -270,6 +263,7 @@ header label:hover {
 	max-width: 800px;
 	box-shadow: 12px 12px 32px #dad7a7, -12px -12px 32px #ffffdd;
 }
+/*Contenedor de mapa*/
 .container-mapa {
 	box-shadow: 12px 12px 32px #dad7a7, -12px -12px 32px #ffffdd;
 	margin: 4rem auto 4rem auto;
@@ -280,10 +274,11 @@ header label:hover {
 	border-radius: var(--border-radius-card);
 	max-width: 600px;
 }
+/* ESTILO CARDS HORIZONTALES IZQ. Y DER. */
 .container-horizontal {
 	margin: 0 4rem;
 }
-/* ESTILO CARDS HORIZONTALES IZQ. Y DER. */
+
 .card-horizontal {
 	/* seccion principal de la pantalla index*/
 	display: flex;
@@ -354,6 +349,7 @@ header label:hover {
 	margin: auto;
 	transition: 0.3s;
 }
+
 /* ESTILO DE TEXTO */
 /* Título */
 h1 {
@@ -378,6 +374,16 @@ h2 {
 	position: relative;
 	text-align: center;
 	width: 80%;
+}
+/* texto del botón footer */
+h4 {
+	font-size: 0.85rem;
+	margin: 4px 12px;
+	text-align: center;
+	color: white;
+	font-family: "Roboto-Light", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin: 10px;
 }
 /* Contenido de cards */
 h5 {
